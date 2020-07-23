@@ -93,7 +93,7 @@ app.delete('/:id', async (req, res) => {
   }
   else {
     res.status(400);
-    retVal = {status: 'fail', data: {title: `Appointment id must be integer`}};
+    retVal = {status: 'fail', data: {title: `Appointment id must be an integer!`}};
   }
   res.setHeader('content-type', 'application/json');
   res.end(JSON.stringify(retVal));
